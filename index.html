@@ -231,7 +231,7 @@
     leader:   {title:'מנהיגות',teacher:'יעלה + משה',room:'מעבדה 4',note:'חובה לכיתות ט׳',accent:'#9d6b28',tint:'#fff3e4',stroke:'#f1dfc6'},
     pharma:   {title:'ממולקולה לתרופה',teacher:'שני מס לביא',room:'מעבדה 6',accent:'#588445',tint:'#eef8e8',stroke:'#e1efd7'},
     med:      {title:'שליחות רפואית',teacher:'נתי מנצור',room:'יחידה רפואית',accent:'#a84667',tint:'#fff0f4',stroke:'#f5dce6'},
-    ai:       {title:'AI',teacher:'קרן אלאברי',room:'מחשבים 1',accent:'#7354a3',tint:'#f1ebfa',stroke:'#e6ddf5'},
+    ai:       {title:'AI',teacher:'קרן אולאברי',room:'מחשבים 1',accent:'#7354a3',tint:'#f1ebfa',stroke:'#e6ddf5'},
     logic:    {title:'לוגיקה והשאלות הגדולות',teacher:'ירון אלון',room:'מתחם VR',accent:'#7950a5',tint:'#f1eafa',stroke:'#e8def5'},
     writing:  {title:'כתיבה יוצרת',teacher:'רעות וייס',room:'מעבדה 3',accent:'#a05b28',tint:'#fff1e7',stroke:'#f5e2d5'},
     games:    {title:'פיתוח משחקי מחשב',teacher:'אריה סנה',room:'מחשבים 2',accent:'#2f6f9d',tint:'#e7f2fc',stroke:'#d8e8f6'},
@@ -239,17 +239,18 @@
     math:     {title:'למה Math?',teacher:'סבטלנה',room:'מעבדה 2',accent:'#8b4a9c',tint:'#f7eaf8',stroke:'#efdaef'},
     harry:    {title:'הארי פוטר:',teacher:'אמנון הלל',room:'מעבדה 1',accent:'#83529c',tint:'#f5eafb',stroke:'#e9d9f4'},
     smart:    {title:'חומרים חכמים',teacher:'ענת אספורטס',room:'מעבדה 5',accent:'#7354a3',tint:'#f1ebfa',stroke:'#e6ddf5'},
-    force:    {title:'הכוח המניע',teacher:'יעלה + משה',room:'מעבדה 4',note:'רב־גילאי',accent:'#a46a25',tint:'#fff1df',stroke:'#f7e2c8'},
+    astro:    {title:'אסטרונומיה',teacher:'משה ברוקר',room:'מעבדה 4',note:'רב־גילאי',accent:'#a46a25',tint:'#fff1df',stroke:'#f7e2c8'},
     studio:   {title:'סטודיו חי',teacher:'טללית קונפורטי',room:'חדר אלקטרוניקה',note:'רב־גילאי',accent:'#277b75',tint:'#e4f8f3',stroke:'#d3eee6'},
     ethics:   {title:'שאלות קשות: יסודות המוסר',teacher:'ירון אלון',room:'מעבדה 3',accent:'#7950a5',tint:'#f1eafa',stroke:'#e8def5'},
-    gamesMix: {title:'פיתוח משחקי מחשב',teacher:'אריה סנה',room:'מחשבים 2',note:'רב־גילאי',accent:'#2f6f9d',tint:'#e7f2fc',stroke:'#d8e8f6'}
+    gamesMix: {title:'פיתוח משחקי מחשב',teacher:'אריה סנה',room:'מחשבים 2',note:'רב־גילאי',accent:'#2f6f9d',tint:'#e7f2fc',stroke:'#d8e8f6'},
+    theater:  {title:'תיאטרון',teacher:'שושי חפץ',room:'אודיטוריום',accent:'#99438e',tint:'#f9edf7',stroke:'#efd7e8'}
   };
   const schedule = [
     {from:'8:00',to:'9:30',groups:['scifi','fll','python','leader','pharma','med','ai']},
     {break:true,from:'9:30',to:'10:00'},
-    {from:'10:00',to:'11:20',groups:['logic','writing','games','pharma','invent',null,null]},
+    {from:'10:00',to:'11:20',groups:['logic','writing','games','pharma','invent','theater',null]},
     {break:true,from:'11:20',to:'11:30'},
-    {from:'11:30',to:'13:00',groups:['math','harry','smart','force','studio','ethics','gamesMix','ai',null]}
+    {from:'11:30',to:'13:00',groups:['math','harry','smart','astro','studio','ethics','gamesMix','ai',null]}
   ];
   const create=(tag,cls,text)=>{const el=document.createElement(tag);if(cls)el.className=cls;if(text!==undefined)el.textContent=text;return el;};
   const board=document.getElementById('board');
